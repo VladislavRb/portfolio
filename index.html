@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="nav__avatar">
+				<img src="assets/images/me.jpg">
+			</div>
+			<div class="nav__name">Vladislav Rabaschenko</div>
+			<div class="nav__github">Github: <a href="https://github.com/VladislavRb" id="github-link" target="_blank" onmouseover="ghLinkHover()" onmouseout="linkOut()">https://github.com/VladislavRb</a></div>
+			<div class="nav__social-media">Social media: <a href="https://vk.com/id430772567" id="sm-link" target="_blank" onmouseover="smLinkHover()" onmouseout="linkOut()">me in vk</a></div>
+		</nav>
+	</header>
+	<main>
+		<div class="main__dropdown-list__header">
+			<span>Education</span>
+			<button id="show" onclick="showOrHide()"></button>
+		</div>
+		<div class="main__dropdown-list">
+			<button id="hide" onclick="showOrHide()"></button>
+			<hr>
+			<span class="dropdown-list__data">
+				School:<br>
+				2007 - 2018
+			</span>
+			<hr>
+			<span class="dropdown-list__data">
+				University:<br>
+				2018 - till now
+			</span>
+			<hr>
+			<span class="dropdown-list__data">
+				RSSchool Courses:<br>
+				2019 - till now
+			</span>
+		</div>
+
+
+		<!--<div class="main__slider-mobile">
+			<div class="button-wrapper">
+				<button id="back" onclick="goBackward()"></button>
+				<button id="next" onclick="goForward()"></button>
+			</div>
+			<div id="project2">
+				<div class="project__description">
+					<div class="project__description__title">Theyalow project</div>
+					<div class="project__description__ul">
+						<ul>
+							<li>Perfect Pixel</li>
+							<li>Desktop</li>
+							<li>Mobile</li>
+						</ul>
+					</div>
+					<div class="project__description__tip">click on the image to see the project &gt;&gt;</div>
+				</div>
+				<div class="project__image">
+					<img src="assets/images/theyalow.jpg">
+				</div>
+			</div>
+			<div id="project1">
+				<div class="project__description">
+					<div class="project__description__title">Repair-design-project</div>
+					<div class="project__description__ul">
+						<ul>
+							<li>Responsive</li>
+							<li>SVG</li>
+							<li>Slider + pagination via js</li>
+						</ul>
+					</div>
+					<div class="project__description__tip">click on the image to see the project &gt;&gt;</div>
+				</div>
+				<div class="project__image">
+					<img src="assets/images/theyalow.jpg">
+				</div>
+			</div>
+		</div>-->
+
+
+		<div class="main__slider">
+			<div class="button-wrapper">
+				<button id="back" onclick="goBackward()"></button>
+				<button id="next" onclick="goForward()"></button>
+			</div>
+			<div id="project2">
+				<div class="project__description">
+					<div class="project__description__title">Theyalow project</div>
+					<div class="project__description__ul">
+						<ul>
+							<li>Perfect Pixel</li>
+							<li>Desktop</li>
+							<li>Mobile</li>
+						</ul>
+					</div>
+					<div class="project__description__tip">click on the image to see the project &gt;&gt;</div>
+				</div>
+				<div class="project__image">
+					<a href="theyalow/index.html" target="_blank"><img src="assets/images/theyalow.jpg"></a>
+				</div>
+			</div>
+			<div id="project1">
+				<div class="project__description">
+					<div class="project__description__title">Repair-design-project</div>
+					<div class="project__description__ul">
+						<ul>
+							<li>Responsive</li>
+							<li>SVG</li>
+							<li>Slider + pagination via js</li>
+						</ul>
+					</div>
+					<div class="project__description__tip">click on the image to see the project &gt;&gt;</div>
+				</div>
+				<div class="project__image">
+					<a href="repair-design-project/index.html" target="_blank"><img src="assets/images/repair-design.png"></a>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script type="text/javascript" src="scripts/script.js"></script>
+</body>
+</html>
